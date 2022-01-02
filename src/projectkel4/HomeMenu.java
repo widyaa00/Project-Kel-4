@@ -71,7 +71,7 @@ public class HomeMenu extends javax.swing.JFrame {
         bayar = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         totalfull = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btnHapus = new javax.swing.JButton();
         btnLogout = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -109,7 +109,7 @@ public class HomeMenu extends javax.swing.JFrame {
 
         lblWelcome.setFont(new java.awt.Font("STXihei", 1, 14)); // NOI18N
         lblWelcome.setForeground(new java.awt.Color(255, 255, 255));
-        lblWelcome.setText("Welcome to UAS Caffe ");
+        lblWelcome.setText("Welcome to ,");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -118,7 +118,7 @@ public class HomeMenu extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addComponent(lblWelcome)
-                .addContainerGap(435, Short.MAX_VALUE))
+                .addContainerGap(593, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -136,6 +136,7 @@ public class HomeMenu extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         jLabel2.setText("Harga");
 
+        cbEspresso.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         cbEspresso.setText("Espresso");
         cbEspresso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,6 +144,7 @@ public class HomeMenu extends javax.swing.JFrame {
             }
         });
 
+        cbAmericano.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         cbAmericano.setText("Americano");
         cbAmericano.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -150,6 +152,7 @@ public class HomeMenu extends javax.swing.JFrame {
             }
         });
 
+        cbCappucino.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         cbCappucino.setText("Cappucino");
         cbCappucino.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -157,6 +160,7 @@ public class HomeMenu extends javax.swing.JFrame {
             }
         });
 
+        cbLatte.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         cbLatte.setText("Latte");
         cbLatte.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -164,8 +168,10 @@ public class HomeMenu extends javax.swing.JFrame {
             }
         });
 
+        jLabel4.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         jLabel4.setText("Pilih Menu");
 
+        jLabel5.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         jLabel5.setText("Sub Total");
 
         hargaCappucino.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
@@ -204,30 +210,41 @@ public class HomeMenu extends javax.swing.JFrame {
         totalLatte.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         totalLatte.setText("0");
 
+        checkout.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         checkout.setText("CHECK OUT");
-        checkout.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                checkoutStateChanged(evt);
+        checkout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkoutActionPerformed(evt);
             }
         });
 
+        jLabel6.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         jLabel6.setText("Total ");
 
         diskon.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         diskon.setText("0");
 
+        jLabel7.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         jLabel7.setText("Total Bayar");
 
         bayar.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         bayar.setText("0");
 
+        jLabel8.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         jLabel8.setText("Diskon");
 
         totalfull.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         totalfull.setText("0");
 
-        jButton1.setText("Clear");
+        btnHapus.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
+        btnHapus.setText("Clear");
+        btnHapus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHapusActionPerformed(evt);
+            }
+        });
 
+        btnLogout.setFont(new java.awt.Font("STXihei", 0, 12)); // NOI18N
         btnLogout.setText("Logout");
         btnLogout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -241,63 +258,66 @@ public class HomeMenu extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2)
-                        .addGap(105, 105, 105)
-                        .addComponent(jLabel1)
-                        .addGap(81, 81, 81))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(cbLatte, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cbEspresso, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cbAmericano, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cbCappucino, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addGap(83, 83, 83)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(hargaespresso, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
-                                            .addComponent(hargaLatte)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(hargaCappucino, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(hargaAmericano, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING))))
-                                .addGap(45, 45, 45)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jumlahAmericano, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
-                                    .addComponent(jumlahCappucino)
-                                    .addComponent(jumlahEspresso)
-                                    .addComponent(jumlahLatte)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(64, 64, 64)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addComponent(checkout)
-                                        .addGap(163, 163, 163)
-                                        .addComponent(btnLogout))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGap(20, 20, 20)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addComponent(checkout)
+                                    .addGap(58, 58, 58)
+                                    .addComponent(btnHapus))
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(cbAmericano, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cbCappucino, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(67, 67, 67)
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel7)
-                                        .addComponent(jLabel8)
-                                        .addComponent(jLabel6)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel5)
-                    .addComponent(totalEspresso, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
-                    .addComponent(totalLatte)
-                    .addComponent(totalCappucino)
-                    .addComponent(totalAmericano)
-                    .addComponent(diskon)
-                    .addComponent(bayar)
-                    .addComponent(totalfull))
-                .addGap(62, 62, 62))
+                                        .addComponent(hargaCappucino, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(hargaAmericano, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(cbLatte, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cbEspresso, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(67, 67, 67)
+                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(hargaespresso, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(hargaLatte, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGap(75, 75, 75)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jumlahLatte, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jumlahAmericano, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                                    .addComponent(jumlahCappucino)
+                                    .addComponent(jumlahEspresso, javax.swing.GroupLayout.Alignment.TRAILING))))
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGap(328, 328, 328)
+                            .addComponent(btnLogout))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel6)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabel4)
+                        .addGap(121, 121, 121)
+                        .addComponent(jLabel2)
+                        .addGap(112, 112, 112)
+                        .addComponent(jLabel1)))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(96, 96, 96)
+                        .addComponent(jLabel5))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(83, 83, 83)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(totalAmericano, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(totalCappucino, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(totalEspresso, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(totalLatte, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(diskon, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(totalfull, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(bayar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -335,21 +355,25 @@ public class HomeMenu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(diskon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(totalfull, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
-                .addGap(8, 8, 8)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(checkout)
-                    .addComponent(jButton1)
-                    .addComponent(btnLogout))
-                .addContainerGap())
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel6)
+                            .addComponent(totalfull, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(checkout)
+                            .addComponent(btnHapus)
+                            .addComponent(btnLogout))
+                        .addContainerGap())
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(bayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         jMenu1.setText("Menu");
@@ -366,10 +390,10 @@ public class HomeMenu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -377,8 +401,7 @@ public class HomeMenu extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -445,7 +468,20 @@ public class HomeMenu extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_cbAmericanoStateChanged
 
-    private void checkoutStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_checkoutStateChanged
+    private void cbLatteStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_cbLatteStateChanged
+        // TODO add your handling code here:
+        if (cbLatte.isSelected()){
+            hargaLatte.setEnabled(true);
+            jumlahLatte.setEnabled(true);           
+            totalLatte.setEnabled(true);
+        }else{
+            hargaLatte.setEnabled(false);
+            jumlahLatte.setEnabled(false);
+            totalLatte .setEnabled(false);
+        }
+    }//GEN-LAST:event_cbLatteStateChanged
+
+    private void checkoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkoutActionPerformed
         // TODO add your handling code here:
         int harga = Integer.parseInt(hargaCappucino.getText());
         int jumlah = Integer.parseInt(jumlahCappucino.getText());
@@ -470,31 +506,39 @@ public class HomeMenu extends javax.swing.JFrame {
         int Total4 = Integer.parseInt(totalLatte.getText());
         int total = Total1 + Total2 + Total3 + Total4;
         diskon.setText("Rp." + total + ",00");
-        if (total > 250000){
+        if (total > 200000){
             totalfull.setText("20%");
             total = total-(total * 20/100);
             bayar.setText("Rp." + total + ",00");
-        }else if (total > 150000){
+        }else if (total > 100000){
             totalfull.setText("10%");
             total = total-(total*10/100);
             bayar.setText("Rp." + total + ",00");
         }else{
             bayar.setText("Rp."+total+",00");
         }
-    }//GEN-LAST:event_checkoutStateChanged
+        
+    }//GEN-LAST:event_checkoutActionPerformed
 
-    private void cbLatteStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_cbLatteStateChanged
+    private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusActionPerformed
         // TODO add your handling code here:
-        if (cbLatte.isSelected()){
-            hargaLatte.setEnabled(true);
-            jumlahLatte.setEnabled(true);           
-            totalLatte.setEnabled(true);
-        }else{
-            hargaLatte.setEnabled(false);
-            jumlahLatte.setEnabled(false);
-            totalLatte .setEnabled(false);
-        }
-    }//GEN-LAST:event_cbLatteStateChanged
+        hargaCappucino.setText("");
+        jumlahCappucino.setText("");
+        totalCappucino.setText("");
+        hargaAmericano.setText("");
+        jumlahAmericano.setText("");
+        totalAmericano.setText("");
+        hargaLatte.setText("");
+        jumlahLatte.setText("");
+        totalLatte.setText("");
+        hargaespresso.setText("");
+        jumlahEspresso.setText("");           
+        totalEspresso.setText("");
+        totalfull.setText("");
+        diskon.setText("");
+        bayar.setText("");
+        
+    }//GEN-LAST:event_btnHapusActionPerformed
 
     /**
      * @param args the command line arguments
@@ -534,6 +578,7 @@ public class HomeMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField bayar;
+    private javax.swing.JButton btnHapus;
     private javax.swing.JButton btnLogout;
     private javax.swing.JCheckBox cbAmericano;
     private javax.swing.JCheckBox cbCappucino;
@@ -545,7 +590,6 @@ public class HomeMenu extends javax.swing.JFrame {
     private javax.swing.JTextField hargaCappucino;
     private javax.swing.JTextField hargaLatte;
     private javax.swing.JTextField hargaespresso;
-    private javax.swing.JButton jButton1;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem2;
     private javax.swing.JComboBox<String> jComboBox1;

@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 import javax.swing.*;
 public class LoginMenu extends javax.swing.JFrame {
-    String username = "admin";
+    String username = "coffeeshop";
     String password = "admin1";
 
     /**
