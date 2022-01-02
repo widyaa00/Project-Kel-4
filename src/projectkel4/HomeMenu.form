@@ -97,21 +97,22 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jPanel2" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
                   <Component id="jPanel1" max="32767" attributes="0"/>
+                  <Component id="jPanel2" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="67" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jPanel2" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -130,16 +131,21 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                   <Component id="lblWelcome" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="593" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="btnLogout" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                  <Component id="lblWelcome" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="26" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="btnLogout" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblWelcome" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="36" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -156,6 +162,17 @@
             <Property name="text" type="java.lang.String" value="Welcome to ,"/>
           </Properties>
         </Component>
+        <Component class="javax.swing.JButton" name="btnLogout">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="STXihei" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Logout"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLogoutActionPerformed"/>
+          </Events>
+        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanel2">
@@ -163,92 +180,148 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="cc" red="cc" type="rgb"/>
         </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe Print" size="12" style="0"/>
+        </Property>
       </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="checkout" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                                      <Component id="btnHapus" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="cbDonat" min="-2" pref="103" max="-2" attributes="0"/>
+                                              <Component id="cbPisangbakar" min="-2" pref="103" max="-2" attributes="0"/>
+                                              <Component id="cbRotibakar" min="-2" pref="103" max="-2" attributes="0"/>
+                                              <Component id="cbLatte" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                              <Component id="cbCappucino" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="hargaPisangbakar" pref="95" max="32767" attributes="0"/>
+                                              <Component id="hargaDonat" alignment="0" max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="hargaAmericano" min="-2" pref="83" max="-2" attributes="0"/>
+                                                  <Component id="hargaLatte" min="-2" pref="83" max="-2" attributes="0"/>
+                                                  <Component id="hargaCappucino" alignment="1" min="-2" pref="83" max="-2" attributes="0"/>
+                                                  <Component id="hargaespresso" alignment="1" min="-2" pref="83" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="hargaRotibakar" alignment="0" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Component id="cbEspresso" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="cbAmericano" min="-2" pref="103" max="-2" attributes="0"/>
-                                          <Component id="cbCappucino" min="-2" pref="103" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="75" pref="75" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jumlahEspresso" alignment="1" min="-2" pref="80" max="-2" attributes="0"/>
+                                                      <Component id="jumlahLatte" alignment="1" min="-2" pref="80" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jumlahAmericano" alignment="1" min="-2" pref="80" max="-2" attributes="0"/>
+                                                      <Component id="jumlahCappucino" alignment="1" min="-2" pref="80" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
-                                      <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="hargaCappucino" alignment="1" min="-2" pref="83" max="-2" attributes="0"/>
-                                          <Component id="hargaAmericano" alignment="1" min="-2" pref="83" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="cbLatte" alignment="1" min="-2" pref="103" max="-2" attributes="0"/>
-                                          <Component id="cbEspresso" min="-2" pref="103" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="hargaespresso" min="-2" pref="83" max="-2" attributes="0"/>
-                                          <Component id="hargaLatte" min="-2" pref="83" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="jumlahRotibakar" alignment="1" pref="95" max="32767" attributes="0"/>
+                                              <Component id="jumlahPisangbakar" alignment="1" max="32767" attributes="0"/>
+                                              <Component id="jumlahDonat" alignment="1" max="32767" attributes="0"/>
+                                          </Group>
                                       </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jumlahLatte" min="-2" pref="80" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jumlahAmericano" pref="80" max="32767" attributes="0"/>
-                                      <Component id="jumlahCappucino" max="32767" attributes="0"/>
-                                      <Component id="jumlahEspresso" alignment="1" max="32767" attributes="0"/>
-                                  </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="cbAmericano" min="-2" pref="103" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="328" max="-2" attributes="0"/>
-                              <Component id="btnLogout" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
-                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
+                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="checkout" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="180" max="-2" attributes="0"/>
+                                  <Component id="btnHapus" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="totalAmericano" pref="95" max="32767" attributes="0"/>
+                              <Component id="totalCappucino" max="32767" attributes="0"/>
+                              <Component id="totalEspresso" alignment="0" max="32767" attributes="0"/>
+                              <Component id="totalLatte" alignment="0" max="32767" attributes="0"/>
+                              <Component id="diskon" alignment="0" max="32767" attributes="0"/>
+                              <Component id="totalfull" alignment="0" max="32767" attributes="0"/>
+                              <Component id="bayar" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
                           <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="totalAmericano" min="-2" pref="95" max="-2" attributes="0"/>
-                              <Component id="totalCappucino" min="-2" pref="95" max="-2" attributes="0"/>
-                              <Component id="totalEspresso" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
-                              <Component id="totalLatte" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
-                              <Component id="diskon" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
-                              <Component id="totalfull" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
-                              <Component id="bayar" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
+                              <Component id="totalDonat" alignment="1" min="-2" pref="93" max="-2" attributes="0"/>
+                              <Component id="totalPisangbakar" alignment="1" min="-2" pref="93" max="-2" attributes="0"/>
+                              <Component id="totalRotibakar" alignment="1" min="-2" pref="93" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
+                  <EmptySpace pref="114" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -257,17 +330,64 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                                          <Component id="cbRotibakar" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="totalRotibakar" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="hargaRotibakar" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jumlahRotibakar" alignment="1" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="hargaPisangbakar" min="-2" pref="22" max="-2" attributes="0"/>
+                              <Component id="cbPisangbakar" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                  <Component id="jumlahPisangbakar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="totalPisangbakar" alignment="3" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="28" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="cbDonat" min="-2" max="-2" attributes="0"/>
+                              <Component id="hargaDonat" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jumlahDonat" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="totalDonat" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace pref="33" max="32767" attributes="0"/>
+                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="cbCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="hargaCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jumlahCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cbCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="totalCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -281,44 +401,34 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="cbEspresso" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="hargaespresso" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jumlahEspresso" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumlahLatte" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="totalEspresso" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="cbLatte" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="hargaLatte" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jumlahLatte" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumlahEspresso" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="totalLatte" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="7" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel8" alignment="3" max="32767" attributes="0"/>
+                      <Component id="diskon" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="totalfull" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnHapus" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="diskon" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="bayar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkout" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="totalfull" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="62" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="checkout" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnHapus" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnLogout" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                          <Component id="bayar" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -327,7 +437,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
+              <Font name="Segoe Print" size="12" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Jumlah"/>
           </Properties>
@@ -335,7 +445,7 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
+              <Font name="Segoe Print" size="12" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Harga"/>
           </Properties>
@@ -343,7 +453,7 @@
         <Component class="javax.swing.JCheckBox" name="cbEspresso">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
+              <Font name="Segoe Print" size="12" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Espresso"/>
           </Properties>
@@ -354,7 +464,7 @@
         <Component class="javax.swing.JCheckBox" name="cbAmericano">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
+              <Font name="Segoe Print" size="12" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Americano"/>
           </Properties>
@@ -365,7 +475,7 @@
         <Component class="javax.swing.JCheckBox" name="cbCappucino">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
+              <Font name="Segoe Print" size="12" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cappucino"/>
           </Properties>
@@ -376,7 +486,7 @@
         <Component class="javax.swing.JCheckBox" name="cbLatte">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
+              <Font name="Segoe Print" size="12" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Latte"/>
           </Properties>
@@ -387,7 +497,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
+              <Font name="Segoe Print" size="12" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Pilih Menu"/>
           </Properties>
@@ -395,7 +505,7 @@
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
+              <Font name="Segoe Print" size="12" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Sub Total"/>
           </Properties>
@@ -403,74 +513,168 @@
         <Component class="javax.swing.JTextField" name="hargaCappucino">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="hargaAmericano">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="hargaespresso">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="hargaLatte">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jumlahCappucino">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jumlahAmericano">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jumlahEspresso">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jumlahLatte">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="totalCappucino">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="totalAmericano">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="totalEspresso">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="totalLatte">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe Print" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Total "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="diskon">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe Print" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Total Bayar"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="bayar">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe Print" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Diskon"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="totalfull">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="cbRotibakar">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe Print" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Roti Bakar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="cbRotibakarStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="cbPisangbakar">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe Print" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Pisang Bakar "/>
+          </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="cbPisangbakarStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="cbDonat">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe Print" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Donat"/>
+          </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="cbDonatStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.TextField" name="hargaRotibakar">
+        </Component>
+        <Component class="java.awt.TextField" name="hargaPisangbakar">
+        </Component>
+        <Component class="java.awt.TextField" name="hargaDonat">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel9">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe Print" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Minuman"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel10">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe Print" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Makanan"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jumlahRotibakar">
+        </Component>
+        <Component class="javax.swing.JTextField" name="jumlahPisangbakar">
+        </Component>
+        <Component class="javax.swing.JTextField" name="jumlahDonat">
+        </Component>
+        <Component class="javax.swing.JTextField" name="totalRotibakar">
+        </Component>
+        <Component class="javax.swing.JTextField" name="totalPisangbakar">
+        </Component>
+        <Component class="javax.swing.JTextField" name="totalDonat">
         </Component>
         <Component class="javax.swing.JButton" name="checkout">
           <Properties>
@@ -483,48 +687,6 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkoutActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel6">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Total "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="diskon">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Total Bayar"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="bayar">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel8">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Diskon"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="totalfull">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="0"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JButton" name="btnHapus">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -534,17 +696,6 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHapusActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnLogout">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="STXihei" size="12" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Logout"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLogoutActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
