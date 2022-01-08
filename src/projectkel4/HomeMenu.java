@@ -202,16 +202,16 @@ public class HomeMenu extends javax.swing.JFrame {
         jLabel5.setText("Sub Total");
 
         hargaCappucino.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaCappucino.setText("0");
+        hargaCappucino.setText(" 25000");
 
         hargaAmericano.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaAmericano.setText("0");
+        hargaAmericano.setText(" 25000");
 
         hargaespresso.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaespresso.setText("0");
+        hargaespresso.setText(" 20000");
 
         hargaLatte.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaLatte.setText("0");
+        hargaLatte.setText(" 24000");
 
         jumlahCappucino.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jumlahCappucino.setText("0");
@@ -321,13 +321,13 @@ public class HomeMenu extends javax.swing.JFrame {
         });
 
         hargaDonat.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaDonat.setText("0");
+        hargaDonat.setText(" 23000");
 
         hargaPisangbakar.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaPisangbakar.setText("0");
+        hargaPisangbakar.setText("20000");
 
         hargaRotibakar.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaRotibakar.setText("0");
+        hargaRotibakar.setText("25000");
         hargaRotibakar.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -696,6 +696,13 @@ public class HomeMenu extends javax.swing.JFrame {
         totalfull.setText("");
         diskon.setText("");
         bayar.setText("");
+        cbRotibakar.setSelected(false);
+        cbPisangbakar.setSelected(false);
+        cbDonat.setSelected(false);
+        cbEspresso.setSelected(false);
+        cbCappucino.setSelected(false);
+        cbLatte.setSelected(false);
+        cbAmericano.setSelected(false);
         
     }//GEN-LAST:event_btnHapusActionPerformed
 
