@@ -202,16 +202,16 @@ public class HomeMenu extends javax.swing.JFrame {
         jLabel5.setText("Sub Total");
 
         hargaCappucino.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaCappucino.setText(" 25000");
+        hargaCappucino.setText("15000");
 
         hargaAmericano.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaAmericano.setText(" 25000");
+        hargaAmericano.setText("15000");
 
         hargaespresso.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaespresso.setText(" 20000");
+        hargaespresso.setText("15000");
 
         hargaLatte.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaLatte.setText(" 24000");
+        hargaLatte.setText("0");
 
         jumlahCappucino.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jumlahCappucino.setText("0");
@@ -321,13 +321,13 @@ public class HomeMenu extends javax.swing.JFrame {
         });
 
         hargaDonat.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaDonat.setText(" 23000");
+        hargaDonat.setText("15000");
 
         hargaPisangbakar.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         hargaPisangbakar.setText("20000");
 
         hargaRotibakar.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        hargaRotibakar.setText("25000");
+        hargaRotibakar.setText("20000");
         hargaRotibakar.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -336,6 +336,20 @@ public class HomeMenu extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addGap(83, 83, 83)
+                                .addComponent(jLabel2)
+                                .addGap(96, 96, 96)
+                                .addComponent(jLabel1)
+                                .addGap(96, 96, 96)
+                                .addComponent(jLabel5))
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel9)
+                            .addComponent(btnHapus)))
                     .addComponent(cbEspresso, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -369,7 +383,6 @@ public class HomeMenu extends javax.swing.JFrame {
                                             .addComponent(totalPisangbakar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(totalRotibakar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(totalfull, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                             .addGroup(jPanel2Layout.createSequentialGroup()
                                                 .addComponent(jumlahEspresso, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -390,29 +403,16 @@ public class HomeMenu extends javax.swing.JFrame {
                                             .addGroup(jPanel2Layout.createSequentialGroup()
                                                 .addComponent(jLabel8)
                                                 .addGap(67, 67, 67)
-                                                .addComponent(diskon, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addComponent(bayar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                .addComponent(totalfull, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(bayar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(diskon, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(checkout)
                                 .addGap(74, 74, 74)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel7)
-                                    .addComponent(jLabel6)))))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnHapus)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(83, 83, 83)
-                                .addComponent(jLabel2)
-                                .addGap(96, 96, 96)
-                                .addComponent(jLabel1)
-                                .addGap(96, 96, 96)
-                                .addComponent(jLabel5))
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel9))))
-                .addContainerGap(272, Short.MAX_VALUE))
+                                    .addComponent(jLabel6))))))
+                .addContainerGap(212, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -471,28 +471,27 @@ public class HomeMenu extends javax.swing.JFrame {
                     .addComponent(totalLatte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
+                        .addGap(11, 11, 11)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
+                            .addComponent(totalfull, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel6)
                         .addGap(120, 120, 120))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(43, 43, 43)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(btnHapus)
-                                    .addComponent(checkout))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel7)
-                                    .addComponent(bayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addComponent(diskon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(totalfull, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(41, 41, 41)))
+                                    .addComponent(checkout)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(diskon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(bayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
@@ -662,30 +661,30 @@ public class HomeMenu extends javax.swing.JFrame {
 
     private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusActionPerformed
         // TODO add your handling code here:
-        hargaCappucino.setText("");
-        jumlahCappucino.setText("");
-        totalCappucino.setText("");
-        hargaAmericano.setText("");
-        jumlahAmericano.setText("");
-        totalAmericano.setText("");
-        hargaLatte.setText("");
-        jumlahLatte.setText("");
-        totalLatte.setText("");
-        hargaespresso.setText("");
-        jumlahEspresso.setText("");           
-        totalEspresso.setText("");
-        hargaRotibakar.setText("");
-        jumlahRotibakar.setText("");          
-        totalRotibakar.setText("");
-        hargaPisangbakar.setText("");
-        jumlahPisangbakar.setText("");          
-        totalPisangbakar.setText("");
-        hargaDonat.setText("");
-        jumlahDonat.setText("");           
-        totalDonat.setText("");
-        totalfull.setText("");
-        diskon.setText("");
-        bayar.setText("");
+        hargaCappucino.setText("15000");
+        jumlahCappucino.setText("0");
+        totalCappucino.setText("0");
+        hargaAmericano.setText("15000");
+        jumlahAmericano.setText("0");
+        totalAmericano.setText("0");
+        hargaLatte.setText("15000");
+        jumlahLatte.setText("0");
+        totalLatte.setText("0");
+        hargaespresso.setText("15000");
+        jumlahEspresso.setText("0");           
+        totalEspresso.setText("0");
+        hargaRotibakar.setText("20000");
+        jumlahRotibakar.setText("0");          
+        totalRotibakar.setText("0");
+        hargaPisangbakar.setText("20000");
+        jumlahPisangbakar.setText("0");          
+        totalPisangbakar.setText("0");
+        hargaDonat.setText("15000");
+        jumlahDonat.setText("0");           
+        totalDonat.setText("0");
+        totalfull.setText("0");
+        diskon.setText("0");
+        bayar.setText("0");
         cbRotibakar.setSelected(false);
         cbPisangbakar.setSelected(false);
         cbDonat.setSelected(false);
