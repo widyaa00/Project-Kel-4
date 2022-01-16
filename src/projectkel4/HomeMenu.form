@@ -95,13 +95,18 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Component id="jPanel1" alignment="1" max="32767" attributes="0"/>
-                  <Component id="jPanel2" alignment="1" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="98" max="32767" attributes="0"/>
+              <EmptySpace pref="80" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -112,7 +117,7 @@
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="26" max="32767" attributes="0"/>
+              <EmptySpace pref="119" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -131,7 +136,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                   <Component id="lblWelcome" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="560" max="32767" attributes="0"/>
                   <Component id="btnLogout" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
               </Group>
@@ -189,119 +194,106 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="cbEspresso" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="cbDonat" min="-2" pref="103" max="-2" attributes="0"/>
+                              <Component id="cbPisangbakar" min="-2" pref="103" max="-2" attributes="0"/>
+                              <Component id="cbLatte" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                              <Component id="cbCappucino" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                              <Component id="cbRotibakar" min="-2" pref="103" max="-2" attributes="0"/>
+                              <Component id="cbAmericano" min="-2" pref="103" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="hargaRotibakar" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                      <Component id="hargaPisangbakar" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                      <Component id="hargaDonat" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                      <Component id="hargaCappucino" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                      <Component id="hargaAmericano" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                      <Component id="hargaespresso" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                      <Component id="hargaLatte" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="cbDonat" min="-2" pref="103" max="-2" attributes="0"/>
-                                              <Component id="cbPisangbakar" min="-2" pref="103" max="-2" attributes="0"/>
-                                              <Component id="cbRotibakar" min="-2" pref="103" max="-2" attributes="0"/>
-                                              <Component id="cbLatte" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
-                                              <Component id="cbCappucino" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                              <Component id="jumlahRotibakar" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
+                                              <Component id="jumlahPisangbakar" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
+                                              <Component id="jumlahDonat" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                              <Component id="hargaAmericano" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="hargaLatte" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="hargaCappucino" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="hargaespresso" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="hargaPisangbakar" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="hargaDonat" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="hargaRotibakar" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="totalDonat" min="-2" pref="93" max="-2" attributes="0"/>
+                                              <Component id="totalPisangbakar" min="-2" pref="93" max="-2" attributes="0"/>
+                                              <Component id="totalRotibakar" min="-2" pref="93" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Component id="cbEspresso" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Component id="totalfull" min="-2" pref="95" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="jumlahEspresso" min="-2" pref="95" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="totalLatte" min="-2" pref="95" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="jumlahLatte" min="-2" pref="95" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="totalEspresso" min="-2" pref="95" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="jumlahAmericano" min="-2" pref="95" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="totalAmericano" min="-2" pref="95" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="jumlahCappucino" min="-2" pref="95" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                                                  <Component id="totalCappucino" min="-2" pref="95" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                                                  <Component id="diskon" min="-2" pref="95" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Component id="bayar" alignment="1" min="-2" pref="95" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jumlahCappucino" alignment="1" pref="95" max="32767" attributes="0"/>
-                                      <Component id="jumlahRotibakar" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="jumlahPisangbakar" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="jumlahDonat" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="jumlahAmericano" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="jumlahLatte" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="jumlahEspresso" alignment="1" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="cbAmericano" min="-2" pref="103" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
-                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="123" max="32767" attributes="0"/>
-                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace max="32767" attributes="0"/>
                                   <Component id="checkout" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
-                                  <Component id="btnHapus" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnHapus" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="totalAmericano" pref="95" max="32767" attributes="0"/>
-                              <Component id="totalCappucino" max="32767" attributes="0"/>
-                              <Component id="totalEspresso" alignment="0" max="32767" attributes="0"/>
-                              <Component id="totalLatte" alignment="0" max="32767" attributes="0"/>
-                              <Component id="diskon" alignment="0" max="32767" attributes="0"/>
-                              <Component id="totalfull" alignment="0" max="32767" attributes="0"/>
-                              <Component id="bayar" alignment="0" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
-                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="totalDonat" alignment="1" min="-2" pref="93" max="-2" attributes="0"/>
-                              <Component id="totalPisangbakar" alignment="1" min="-2" pref="93" max="-2" attributes="0"/>
-                              <Component id="totalRotibakar" alignment="1" min="-2" pref="93" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <EmptySpace pref="83" max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="272" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -309,104 +301,96 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="cbRotibakar" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="hargaRotibakar" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jumlahRotibakar" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="totalRotibakar" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="cbPisangbakar" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                  <Component id="jumlahPisangbakar" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="totalPisangbakar" alignment="3" max="32767" attributes="0"/>
-                                  <Component id="hargaPisangbakar" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace pref="20" max="32767" attributes="0"/>
-                          <Component id="cbDonat" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jumlahDonat" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="totalDonat" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="hargaDonat" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cbRotibakar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hargaRotibakar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumlahRotibakar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="totalRotibakar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cbPisangbakar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hargaPisangbakar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumlahPisangbakar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="totalPisangbakar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cbDonat" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hargaDonat" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumlahDonat" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="totalDonat" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="35" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="hargaCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumlahCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cbCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="totalCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cbAmericano" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hargaAmericano" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumlahAmericano" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="totalAmericano" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cbEspresso" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hargaespresso" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumlahLatte" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="totalEspresso" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cbLatte" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hargaLatte" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumlahEspresso" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="totalLatte" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace pref="25" max="32767" attributes="0"/>
-                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="hargaCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jumlahCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cbCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="totalCappucino" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="cbAmericano" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="hargaAmericano" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jumlahAmericano" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="totalAmericano" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="cbEspresso" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="hargaespresso" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jumlahLatte" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="totalEspresso" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="cbLatte" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="hargaLatte" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jumlahEspresso" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="totalLatte" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace pref="7" max="32767" attributes="0"/>
-                                  <Component id="diskon" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel8" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="totalfull" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnHapus" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="checkout" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="bayar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <Component id="jLabel8" pref="23" max="32767" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="btnHapus" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="checkout" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bayar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                                  <Component id="diskon" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="totalfull" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="81" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
